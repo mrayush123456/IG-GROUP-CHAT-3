@@ -21,8 +21,7 @@ HTML_TEMPLATE = '''
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #2c3e50;
-            color: #ecf0f1;
+            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -31,41 +30,46 @@ HTML_TEMPLATE = '''
             height: 100vh;
         }
         .container {
-            background-color: #34495e;
+            background-color: #ffffff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             max-width: 500px;
             width: 100%;
         }
         h1 {
             text-align: center;
+            color: #333333;
             margin-bottom: 20px;
-            color: #1abc9c;
         }
         label {
+            display: block;
             font-weight: bold;
             margin: 10px 0 5px;
+            color: #333333;
         }
-        input, select, button {
+        input, button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: none;
+            border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
         }
-        input, select {
-            background-color: #ecf0f1;
-            color: #2c3e50;
+        input:focus, button:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
         }
         button {
-            background-color: #1abc9c;
-            color: white;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
             cursor: pointer;
+            font-weight: bold;
         }
         button:hover {
-            background-color: #16a085;
+            background-color: #0056b3;
         }
         .message {
             color: red;
@@ -73,9 +77,14 @@ HTML_TEMPLATE = '''
             text-align: center;
         }
         .success {
-            color: #1abc9c;
+            color: green;
             font-size: 14px;
             text-align: center;
+        }
+        .info {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: -10px;
         }
     </style>
 </head>
